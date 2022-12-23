@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'array';
+  titulo = "Bienvenidos a mi lista de Cursos";
+
+  //cursos!:string[];
+  cursos = ['JavaScript', 'C#', 'Otro curso'];
+
+  addCurso(nombrec:String){
+    this.cursos.push(String(nombrec));
+  }
+
 }
